@@ -932,6 +932,11 @@ Whether to enable the Ruff extension. Modifying this setting requires restarting
 
 ### `format.args`
 
+!!! warning "Deprecated"
+    This setting is only used by [`ruff-lsp`](https://github.com/astral-sh/ruff-lsp) which is
+    deprecated in favor of the native language server. Refer to the [migration
+    guide](editors/migration.md) for more information.
+
 _**This setting is not used by the native language server.**_
 
 Additional arguments to pass to the Ruff formatter.
@@ -949,6 +954,11 @@ Additional arguments to pass to the Ruff formatter.
 ```
 
 ### `ignoreStandardLibrary`
+
+!!! warning "Deprecated"
+    This setting is only used by [`ruff-lsp`](https://github.com/astral-sh/ruff-lsp) which is
+    deprecated in favor of the native language server. Refer to the [migration
+    guide](editors/migration.md) for more information.
 
 _**This setting is not used by the native language server.**_
 
@@ -1010,6 +1020,11 @@ This setting depends on the [`ruff.nativeServer`](#nativeserver) setting:
 
 ### `lint.args`
 
+!!! warning "Deprecated"
+    This setting is only used by [`ruff-lsp`](https://github.com/astral-sh/ruff-lsp) which is
+    deprecated in favor of the native language server. Refer to the [migration
+    guide](editors/migration.md) for more information.
+
 _**This setting is not used by the native language server.**_
 
 Additional arguments to pass to the Ruff linter.
@@ -1028,6 +1043,11 @@ Additional arguments to pass to the Ruff linter.
 
 ### `lint.run`
 
+!!! warning "Deprecated"
+    This setting is only used by [`ruff-lsp`](https://github.com/astral-sh/ruff-lsp) which is
+    deprecated in favor of the native language server. This setting is irrelevant when using the
+    native language server which runs on every keystroke by default.
+
 _**This setting is not used by the native language server.**_
 
 Run Ruff on every keystroke (`onType`) or on save (`onSave`).
@@ -1045,6 +1065,11 @@ Run Ruff on every keystroke (`onType`) or on save (`onSave`).
 ```
 
 ### `nativeServer`
+
+!!! warning "Deprecated"
+    This setting has been deprecated with the deprecation of
+    [`ruff-lsp`](https://github.com/astral-sh/ruff-lsp). The native language server will be used by
+    default. Refer to the [migration guide](editors/migration.md) for more information.
 
 Whether to use the native language server, [`ruff-lsp`](https://github.com/astral-sh/ruff-lsp) or
 automatically decide between the two based on the Ruff version and extension settings.
